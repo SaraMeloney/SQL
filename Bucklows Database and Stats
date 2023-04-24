@@ -1,1 +1,26 @@
+CREATE TABLE bucklows (
+    id TEXT PRIMARY KEY,
+    item TEXT,
+    price INTEGER,
+    quantity REAL);
 
+INSERT INTO bucklows VALUES (1, "shirts", 20, 4);
+INSERT INTO bucklows VALUES (2, "trousers", 35, 8);
+INSERT INTO bucklows VALUES (3, "sunglasses", 5, 10);
+INSERT INTO bucklows VALUES (4, "scarves", 10, 5);
+INSERT INTO bucklows VALUES (5, "necklaces", 15, 8);
+INSERT INTO bucklows values (6, "jackets", 25, 6);
+INSERT INTO bucklows values (7, "sweaters", 28, 8);
+INSERT INTO bucklows values (8, "hats", 17, 6);
+INSERT INTO bucklows values (9, "jeans", 30, 10);
+INSERT INTO bucklows values (10, "blouses", 42, 16);
+INSERT INTO bucklows values (11, "sneakers", 55, 15);
+INSERT INTO bucklows values (12, "sandals", 35, 12);
+INSERT INTO bucklows values (13, "high heels", 60, 8);
+INSERT INTO bucklows values (14, "socks", 5, 30);
+INSERT INTO bucklows values (15, "rings", 16, 45);
+
+
+SELECT * FROM bucklows;
+
+SELECT SUM(quantity) FROM bucklows;
