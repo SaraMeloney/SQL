@@ -24,3 +24,14 @@ INSERT INTO bucklows values (15, "rings", 16, 45);
 SELECT * FROM bucklows;
 
 SELECT SUM(quantity) FROM bucklows;
+
+--display the database ordered by price. 
+SELECT * FROM bucklows
+ORDER BY price desc; 
+
+
+--what are the most 5 popular items? 
+SELECT item, price
+FROM bucklows
+order by price desc
+limit 5; 
